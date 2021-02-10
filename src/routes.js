@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import Login from "./pages/Login";
 import Home from "./pages/Home";
+import Landing from "./pages/Landing";
 import Events from "./pages/Events";
 import MyRegistrations from "./pages/MyRegistrations";
 import CreateEvent from "./pages/CreateEvent";
@@ -16,7 +17,8 @@ export default function Routes() {
     <BrowserRouter>
       <TopNav />
       <Switch>
-        <Route path="/" exact component={Home} />
+        <Route path="/" exact component={Landing} />
+        <Route path="/home" exact component={Home} />
         <Route path="/events" exact component={Events} />
         <Route path="/login" exact component={Login} />
         <Route path="/register" exact component={Register} />
