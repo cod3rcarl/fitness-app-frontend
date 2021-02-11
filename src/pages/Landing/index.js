@@ -16,9 +16,9 @@ export default function Landing() {
       <main>
         {/* Hero */}
         <div
-          className="relative pt-16 pb-32 flex content-center items-center justify-center "
+          className="relative  flex content-center items-center justify-center "
           style={{
-            minHeight: "95vh",
+            height: "100vh",
           }}
         >
           <div
@@ -50,27 +50,11 @@ export default function Landing() {
                 <Link to="/login">
                   {" "}
                   <button className="bg-transparent hover:bg-yellow-500 text-yellow-500 font semibold hover:text-white p-2 border border-yellow-500 hover:border-transparent rounded inline-block mt-5">
-                    Link here
+                    Login Here
                   </button>
                 </Link>
               </div>
             </div>
-          </div>
-          <div
-            className="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
-            style={{ height: "70px", transform: "translateZ(0)" }}
-          >
-            <svg
-              className="absolute bottom-0 overflow-hidden"
-              xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="none"
-              version="1.1"
-              viewBox="0 0 2560 100"
-              x="0"
-              y="0"
-            >
-              <polygon points="2560 0 2560 100 0 100"></polygon>
-            </svg>
           </div>
         </div>
         {/* ABOUT SECTION */}

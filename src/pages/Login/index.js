@@ -36,9 +36,8 @@ export default function Login({ history }) {
         localStorage.setItem("user_id", user_id);
         localStorage.setItem("role", role);
         setIsLoggedIn(true);
-        history.push("/");
+        history.push("/home");
       } else {
-        console.log(response);
         const { message } = response.data;
         setError(true);
         setErrMessage(message);
