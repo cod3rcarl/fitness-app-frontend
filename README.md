@@ -1,3 +1,3 @@
 #Fitness App Frontend
 
-![Landing Page](/LandingPage.png "Landing Page")
+![Landing Page](https://github.com/cod3rcarl/fitness-app-frontend/public/landingPage.png "Landing Page")
