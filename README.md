@@ -1,3 +1,3 @@
 #Fitness App Frontend
 
-![Landing Page](LandingPage.png "Landong Page")
+![Landing Page](/LandingPage.png "Landing Page")
