@@ -2,12 +2,6 @@ import React from "react";
 import { Button, ButtonGroup } from "reactstrap";
 import TopNav from "../../components/TopNav";
 export default function Home({ history }) {
-  const handleLogout = () => {
-    localStorage.removeItem("user");
-    localStorage.removeItem("user_id");
-    localStorage.removeItem("role");
-    history.push("/");
-  };
   return (
     <div>
       <TopNav />
@@ -19,9 +13,6 @@ export default function Home({ history }) {
         >
           Events
         </Button>
-        <Button className="logout-btn" onClick={handleLogout}>
-          Logout{" "}
-        </Button>{" "}
       </ButtonGroup>
     </div>
   );

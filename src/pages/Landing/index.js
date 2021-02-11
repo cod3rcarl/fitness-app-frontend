@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import AOS from "aos";
@@ -9,7 +8,7 @@ AOS.init({
   duration: 1200,
   once: false,
 });
-export default function Landing() {
+export default function Landing({ history }) {
   return (
     <>
       <Navbar transparent />
@@ -43,16 +42,15 @@ export default function Landing() {
                   <br /> Your head's
                   <span className="text-green-500"> giving up!</span>
                 </h1>
-
                 <h2 className="text-yellow-500 font-semibold text-5xl">
                   Keep Going!
-                </h2>
-                <Link to="/login">
-                  {" "}
-                  <button className="bg-transparent hover:bg-yellow-500 text-yellow-500 font semibold hover:text-white p-2 border border-yellow-500 hover:border-transparent rounded inline-block mt-5">
-                    Login Here
-                  </button>
-                </Link>
+                </h2>{" "}
+                <button
+                  onClick={() => history.push("/login")}
+                  className="bg-yellow-500 text-black hover:text-white p-2 border-4 rounded inline-block mt-3"
+                >
+                  Login Here
+                </button>
               </div>
             </div>
           </div>

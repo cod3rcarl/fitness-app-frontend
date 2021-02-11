@@ -28,7 +28,7 @@ const TopNav = () => {
       {console.log(isLoggedIn)}
       <Navbar color="faded" light>
         <NavbarToggler onClick={toggleNavbar} />
-        <Link to="/login" onClick={handleLogout}>
+        <Link to="/" onClick={handleLogout}>
           <Button className="logout-btn">Logout</Button>
         </Link>
         <Collapse isOpen={!collapsed} navbar>
